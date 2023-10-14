@@ -1,0 +1,55 @@
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import {
+  AiFillGithub,
+  AiOutlineTwitter,
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+
+function Footer() {
+  return (
+    <Container fluid className="footer">
+      <Row>
+        <Col md="4" className="footer-copywright">
+          <h3>Designed and Developed by Harsh Mendhe</h3>
+        </Col>
+        <Col md="4" className="footer-body">
+          <ul className="footer-icons">
+            <li className="social-icons">
+              <a
+                href="https://github.com/Harshmendhe349"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <AiFillGithub />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://twitter.com/harsh_mendhe"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <AiOutlineTwitter />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://www.linkedin.com/in/harsh-mendhe-6634181a8/"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn />
+              </a>
+            </li>
+          </ul>
+        </Col>
+      </Row>
+    </Container>
+  );
+}
+
+export default Footer;
