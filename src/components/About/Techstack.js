@@ -1,68 +1,84 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
-  DiReact,
   DiNodejs,
   DiMongodb,
   DiPython,
   DiGit,
-  DiJava,
 } from "react-icons/di";
 import {
-  SiRedis,
+  SiKalilinux,
   SiFirebase,
   SiNextdotjs,
-  SiSolidity,
+  SiGooglecloud,
   SiPostgresql,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { FaJava, FaReact,FaBootstrap,FaStripe,FaPhp} from "react-icons/fa";
+import "./Techstack.css"; 
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <FaJava />
+        <p>Java</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
+        <p>Javascript</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <FaReact />
+        <p>React</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
+        <p>Node.js</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <FaBootstrap />
+        <p>Bootstrap</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+      <FaPhp />
+        <p>PHP</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
+        <p>MongoDB</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiNextdotjs />
+        <p>Next.js</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
+        <p>Git</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
+        <p>Firebase</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <SiKalilinux />
+        <p>Linux</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
+        <p>PostgreSQL</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
+        <p>Python</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+      <FaStripe />
+        <p>Stripe</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGooglecloud/>
+        <p>Google Cloud</p>
       </Col>
     </Row>
   );

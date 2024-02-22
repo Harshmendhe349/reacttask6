@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import homeLogo from "../../Assets/computer_setup (1).png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -8,7 +8,8 @@ import Type from "./Type";
 function Home() {
   return (
     <section>
-      <Container fluid className="home-section" id="home">
+    <div className="home-section">
+      <Container fluid id="home">
         <Particle />
         <Container className="home-content">
           <Row>
@@ -42,6 +43,7 @@ function Home() {
         </Container>
       </Container>
       <Home2 />
+      </div>
     </section>
   );
 }
